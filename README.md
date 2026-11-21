@@ -1,18 +1,9 @@
-# template-2027
-basic implimentation of CommandV3 started for the 2026-2027 FRC season. </br>
-started on WPILIB 2027 alpha 8, artifacts may exist 
-
-- `Command` creation is abstracted to `CommandFactory` to avoid new programmers having to deal with lambda syntax and declaration.
-- `SimTrigger` serves as a virtual toggle that's controlled via DogLog and provides a BooleanSupplier
-- `*.bak` files were created with the project, and serve only as reference
-- mise is used primarily for node version management and shell script wrapping. JDK is provided by WPILib, and shouldn't be specified there
-- [FORMAT.sh](FORMAT.sh) should be periodically ran. the syntax/linting is already specified in [.vscode/](.vscode/), but it's still a good habit
-- compilation is tested on push, so please only do as such periodically (either upon request / at the end of session)
-
-## examples
-contents of the [examples/](src/main/java/first/examples) should **not** be used in production builds, they mainly serve to demonstrate implimentation and syntax.
-
-## docs
-javadocs syntax is used for functions, variables, and class declarations. compiled into html using dokka; for more information see [mise.toml](mise.toml)
-## license
-ECL2 applies to code written by Team 5464, WPILib and associated commons are still under their respective licensing
+# proto-2027
+prototyping codebase for the 2026-2027 season for FIRST Robotics team 5464
+## keynotes
+- uses the 1.0 branch of the [2027 template](https://github.com/5464-frc/proto-2027)
+- [CommandV3](https://docs.wpilib.org/en/latest/docs/software/commandbased/commands-v3/index.html) bot
+- [DogLog](https://doglog.dev/) logs
+- [Javadoc](https://docs.oracle.com/en/java/javase/22/docs/specs/javadoc/doc-comment-spec.html) -> [Dokka (gradle)](https://kotlinlang.org/docs/dokka-gradle.html) -> [Github Pages](https://5464-frc.github.io/proto-2027/) documentation
+- code written under the provided [ECL-2.0 license](https://github.com/5464-frc/proto-2027/blob/main/LICENCE.md), with the exception of [WPILib](https://github.com/5464-frc/proto-2027/blob/main/WPILib-License.md) and associated commons
+- [SwerveBot](https://github.com/wpilibsuite/allwpilib/tree/v2027.0.0-alpha-8/wpilibjExamples/src/main/java/org/wpilib/examples/swervebot)
